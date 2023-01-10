@@ -12,6 +12,7 @@
     background-image: url(../../img/background.png);
     background-position: center;
     background-size: cover;
+    background-attachment: fixed;
 }
 
 .hero > .short-row {
