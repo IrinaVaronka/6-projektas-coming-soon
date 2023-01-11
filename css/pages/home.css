@@ -56,7 +56,11 @@
     padding-top: 0;
  }
 
- .row.socials {
+ footer > .row {
+    position: relative;
+ }
+
+ .socials {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -64,6 +68,11 @@
     padding: 10px;
     text-align: center;
     border-bottom: 1px solid #fff;
+ }
+ .back-to-top {
+    position: absolute;
+    top: 0;
+    right: 0;
  }
 
  .socials > a {
