@@ -5,6 +5,7 @@
 @import '../3-rd party/font-awesome.min.css';
 /* components */
 @import '../components/clock.css';
+@import '../components/button.css';
 @import '../components/mouse.css';
 @import '../components/progress-bar.css';
  /* CUSTOM STYLE BELOW THIS COMMENT LINE */
@@ -24,6 +25,7 @@
     flex-direction: column;
     gap: 30px;
     text-align: center;
+    align-items: center;
 }
 
 .logo {
@@ -90,4 +92,11 @@
     background-color: #fff;
     color: #03a9f5;
     
+ }
+
+ @media (max-width: 600px) {
+   .main-title {
+      font-size: 50px;
+   }
+
  }
