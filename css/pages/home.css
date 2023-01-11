@@ -4,6 +4,8 @@
 /* 3-rd party */
 @import '../3-rd party/font-awesome.min.css';
 /* components */
+@import '../components/clock.css';
+@import '../components/mouse.css';
  /* CUSTOM STYLE BELOW THIS COMMENT LINE */
 
  /* hero */
@@ -19,7 +21,6 @@
 .hero > .short-row {
     display: flex;
     flex-direction: column;
-    align-items: center;
     gap: 30px;
     text-align: center;
 }
@@ -38,7 +39,7 @@
 }
 
 .main-desctiption {
-    font-size: 18px;
+    font-size: 21px;
 
 }
 
@@ -72,7 +73,7 @@
     color: #fff;
     text-decoration: none;
     border-radius: 50%;
-    transition: all 0.4s;
+    transition: all 0.5s;
  }
 
  .socials > a:hover {
