@@ -2,6 +2,7 @@
 @import '../base/base.css';
 @import '../base/layout.css';
 /* 3-rd party */
+@import '../3-rd party/font-awesome.min.css';
 /* components */
  /* CUSTOM STYLE BELOW THIS COMMENT LINE */
 
@@ -42,9 +43,40 @@
 }
 
 /* main */ 
+.second-title {
+    text-transform: uppercase;
+    letter-spacing: -1px;
+}
 
 
  /* footer */
  footer.container {
     padding-top: 0;
+ }
+
+ .row.socials {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #fff;
+ }
+
+ .socials > a {
+    width: 2.5em;
+    height: 2.5em;
+    line-height: 2.5em;
+    font-size: 20px;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 50%;
+    transition: all 0.4s;
+ }
+
+ .socials > a:hover {
+    background-color: #fff;
+    color: #03a9f5;
+    
  }
