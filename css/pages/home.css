@@ -5,7 +5,9 @@
 @import '../3-rd party/font-awesome.min.css';
 /* components */
 @import '../components/clock.css';
+@import '../components/button.css';
 @import '../components/mouse.css';
+@import '../components/progress-bar.css';
  /* CUSTOM STYLE BELOW THIS COMMENT LINE */
 
  /* hero */
@@ -23,6 +25,7 @@
     flex-direction: column;
     gap: 30px;
     text-align: center;
+    align-items: center;
 }
 
 .logo {
@@ -55,7 +58,11 @@
     padding-top: 0;
  }
 
- .row.socials {
+ footer > .row {
+    position: relative;
+ }
+
+ .socials {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -63,6 +70,11 @@
     padding: 10px;
     text-align: center;
     border-bottom: 1px solid #fff;
+ }
+ .back-to-top {
+    position: absolute;
+    top: 0;
+    right: 0;
  }
 
  .socials > a {
@@ -80,4 +92,11 @@
     background-color: #fff;
     color: #03a9f5;
     
+ }
+
+ @media (max-width: 600px) {
+   .main-title {
+      font-size: 50px;
+   }
+
  }
