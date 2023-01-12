@@ -90,13 +90,35 @@
 
  .socials > a:hover {
     background-color: #fff;
-    color: #03a9f5;
-    
+    color: #03a9f5;    
  }
 
- @media (max-width: 600px) {
+ .bottom {
+   display: flex;
+   flex-direction: column;
+   text-align: center;
+   align-items: center;
+   color: #fff8;
+   line-height: 1.5em;
+ }
+
+ .bottom > .trio {
+   display: flex;
+   gap: 40px;
+   
+ }
+
+.trio a {
+   color: #fff;
+   text-decoration: none;
+}
+
+.bottom > .logo {
+   margin-bottom: 30px;
+   margin-top: 20px;
+}
+@media (max-width: 600px) {
    .main-title {
       font-size: 50px;
    }
-
- }
+}
