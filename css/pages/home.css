@@ -105,10 +105,10 @@
  .bottom > .trio {
    display: flex;
    gap: 40px;
-   color: #fff;
+   
  }
 
-.bottom a {
+.trio a {
    color: #fff;
    text-decoration: none;
 }
