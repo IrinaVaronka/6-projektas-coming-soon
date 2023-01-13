@@ -110,6 +110,7 @@
  .bottom > .trio > p {
 position: relative;
  }
+
  .bottom > .trio > p + p::before {
    content: '';
    display: inline-block;
@@ -134,4 +135,14 @@ position: relative;
    .main-title {
       font-size: 50px;
    }
+
+   .bottom > .trio > p + p::before {
+      display: none;
+    }
+
+   .bottom > .trio {
+      display: block;
+    }
+
 }
+
