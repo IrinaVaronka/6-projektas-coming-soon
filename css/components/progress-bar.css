@@ -10,10 +10,27 @@ justify-content: space-between;
 .progress-bar > .progress {
 background-color: gainsboro;
 width: 100%;
-height: 4px;
+height: 6px;
 }
 .progress-bar > .progress > .bar {
 width: 90%;
-height: 4px;
-background-color: #03a9f5;
+height: 100%;
+}
+
+.progress-bar > .progress > .bar > .loading {
+    width: 100%;
+    height: 100%;
+    background-color: #03a9f5;
+    animation-name: loading;
+    animation-duration: 3s;
+    }
+    
+
+@keyframes loading {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 100%;
+    }
 }
