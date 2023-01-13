@@ -5,7 +5,9 @@
 @import '../3-rd party/font-awesome.min.css';
 /* components */
 @import '../components/clock.css';
+@import '../components/button.css';
 @import '../components/mouse.css';
+@import '../components/progress-bar.css';
  /* CUSTOM STYLE BELOW THIS COMMENT LINE */
 
  /* hero */
@@ -23,6 +25,7 @@
     flex-direction: column;
     gap: 30px;
     text-align: center;
+    align-items: center;
 }
 
 .logo {
@@ -55,7 +58,11 @@
     padding-top: 0;
  }
 
- .row.socials {
+ footer > .row {
+    position: relative;
+ }
+
+ .socials {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -63,6 +70,11 @@
     padding: 10px;
     text-align: center;
     border-bottom: 1px solid #fff;
+ }
+ .back-to-top {
+    position: absolute;
+    top: -1.1em;
+    right: -0.6em;
  }
 
  .socials > a {
@@ -78,6 +90,48 @@
 
  .socials > a:hover {
     background-color: #fff;
-    color: #03a9f5;
-    
+    color: #03a9f5;    
  }
+
+ .bottom {
+   display: flex;
+   flex-direction: column;
+   text-align: center;
+   align-items: center;
+   color: #fff8;
+   line-height: 1.5em;
+ }
+
+ .bottom > .trio {
+   display: flex;
+   gap: 0 25px;
+ }
+
+ .bottom > .trio > p {
+position: relative;
+ }
+ .bottom > .trio > p + p::before {
+   content: '';
+   display: inline-block;
+   width: 2px;
+   height: 17px;
+   background-color: #fff8;
+   position: absolute;
+   top: 4px;
+   left: -13px;
+ }
+
+.trio a {
+   color: #fff;
+   text-decoration: none;
+}
+
+.bottom > .logo {
+   margin-bottom: 30px;
+   margin-top: 20px;
+}
+@media (max-width: 600px) {
+   .main-title {
+      font-size: 50px;
+   }
+}
