@@ -6,6 +6,8 @@
 /* components */
 @import '../components/clock.css';
 @import '../components/button.css';
+@import '../components/form.css';
+@import '../components/form-subscribe.css';
 @import '../components/mouse.css';
 @import '../components/progress-bar.css';
  /* CUSTOM STYLE BELOW THIS COMMENT LINE */
