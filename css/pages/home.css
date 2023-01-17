@@ -1,0 +1,150 @@
+/* base */
+@import '../base/base.css';
+@import '../base/layout.css';
+/* 3-rd party */
+@import '../3-rd party/font-awesome.min.css';
+/* components */
+@import '../components/clock.css';
+@import '../components/button.css';
+@import '../components/form.css';
+@import '../components/form-subscribe.css';
+@import '../components/mouse.css';
+@import '../components/progress-bar.css';
+ /* CUSTOM STYLE BELOW THIS COMMENT LINE */
+
+ /* hero */
+ .hero {
+    min-height: 100vh;
+    padding-bottom: 30px;
+    background-image: url(../../img/background.png);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.hero > .short-row {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    text-align: center;
+    align-items: center;
+}
+
+.logo {
+    width: 100%;
+    height: 40px;
+    object-fit: contain;
+    object-position: center;
+}
+
+.main-title {
+    font-size: 60px;
+    text-transform: uppercase;
+    letter-spacing: -4px;
+}
+
+.main-desctiption {
+    font-size: 21px;
+
+}
+
+/* main */ 
+.second-title {
+    text-transform: uppercase;
+    letter-spacing: -1px;
+}
+
+
+ /* footer */
+ footer.container {
+    padding-top: 0;
+ }
+
+ footer > .row {
+    position: relative;
+ }
+
+ .socials {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #fff;
+ }
+ .back-to-top {
+    position: absolute;
+    top: -1.1em;
+    right: -0.6em;
+ }
+
+ .socials > a {
+    width: 2.5em;
+    height: 2.5em;
+    line-height: 2.5em;
+    font-size: 20px;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 50%;
+    transition: all 0.5s;
+ }
+
+ .socials > a:hover {
+    background-color: #fff;
+    color: #03a9f5;    
+ }
+
+ .bottom {
+   display: flex;
+   flex-direction: column;
+   text-align: center;
+   align-items: center;
+   color: #fff8;
+   line-height: 1.5em;
+ }
+
+ .bottom > .trio {
+   display: flex;
+   gap: 0 25px;
+ }
+
+ .bottom > .trio > p {
+position: relative;
+ }
+
+ .bottom > .trio > p + p::before {
+   content: '';
+   display: inline-block;
+   width: 2px;
+   height: 17px;
+   background-color: #fff8;
+   position: absolute;
+   top: 4px;
+   left: -13px;
+ }
+
+.trio a {
+   color: #fff;
+   text-decoration: none;
+}
+
+.bottom > .logo {
+   margin-bottom: 30px;
+   margin-top: 20px;
+}
+@media (max-width: 600px) {
+   .main-title {
+      font-size: 50px;
+   }
+
+   .bottom > .trio > p + p::before {
+      display: none;
+    }
+
+   .bottom > .trio {
+      display: block;
+    }
+
+}
+
